@@ -1,0 +1,9 @@
+# Python / build
+__pycache__/
+build/
+dist/
+*.spec
+*.pyc
+
+# Local configs
+ffmpeg_config.json
