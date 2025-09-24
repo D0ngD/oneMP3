@@ -1,76 +1,63 @@
-\# oneMP3 — 一鍵合併音檔
+# oneMP3 — One-Click Audio Merger
+Merge all `.mp3` / `.wav` files in a folder into a single MP3, sorted by filename.  
 
-把資料夾內的 `.mp3` / `.wav` 依照檔名排序合併成一支 MP3
+---
 
+## Features
+- Select an audio folder → outputs `(FULL)FolderName.mp3`  
+- Optional cover image (JPG/PNG) → embedded into ID3 Front Cover  
+- Saves tags as **ID3v2.3** (better compatibility with Windows / car players)  
 
+---
 
-\## 功能
+## Download
+Go to **[Releases](../../releases)** and grab the latest `oneMP3.exe`.  
 
-\- 選擇音檔資料夾 → 合併成 `(FULL)資料夾名稱.mp3`
+---
 
-\- 選擇封面圖片（jpg/png）→ 寫入 ID3 Front Cover（儲存為 ID3v2.3，Windows/車機相容佳）
+## Usage
 
+### Version 1.0
+1. Run `oneMP3_1.0.exe`  
+2. Choose the **audio folder** → choose the **output folder**  
 
+> Requires **ffmpeg** installed and added to PATH.  
 
-\## 下載
+---
 
-到 \*\*\[Releases](../../releases)\*\* 下載 `oneMP3.exe`。
+### Version 2.0 (Cover Image Support)
+1. Run `oneMP3_2.0.exe`  
+2. Choose the **audio folder** → choose the **output folder**  
+3. Choose the **cover image (JPG/PNG)** → done  
 
+---
 
+### Version 3.0 (Beginner-Friendly, Manual ffmpeg Path)
+1. Download ffmpeg from: [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)  
+2. Run `oneMP3.exe`  
+3. Choose the **ffmpeg.exe folder**  
+4. Choose the **audio folder** → choose the **output folder**  
+5. Choose the **cover image (JPG/PNG)** → done  
 
-\## 使用方式
+---
 
-1\. 執行 `oneMP3\_1.0.exe`
+## FAQ
+- **Windows SmartScreen warning**: click *More info* → *Run anyway*.  
+- **Cover not visible in File Explorer preview**: test with **VLC** or **Mp3tag**; sometimes Explorer requires a refresh or cache clear.  
 
-2\. 選「音檔所在資料夾」→ 選「輸出資料夾」
+---
 
+## Version Comparison
 
+| Version | Features |
+|---------|----------|
+| **1.0** | Basic merge (requires ffmpeg in PATH) |
+| **2.0** | Merge + custom cover image |
+| **3.0** | Merge + custom cover + manual ffmpeg path (no PATH setup needed) |
 
-\## 常見問題
+---
 
-\- Windows 會出現 SmartScreen：點「更多資訊」→「仍要執行」。
-
-\- 若封面在檔案總管右側預覽看不到：請用 VLC 或 Mp3tag 驗證；有時需重新整理/清快取。
-
-\- ffmpeg需要手動安裝設定環境變數
-
-
-
-\##  新增2.0版本
-
-加入自訂封面功能
-
-\## 使用方式
-
-1\. 執行 `oneMP3\_2.0.exe`
-
-2\. 選「音檔所在資料夾」→ 選「輸出資料夾」
-
-3\. 選「封面圖片（jpg/png）」→ 完成
-
-
-
-\##  新增3.0版本
-
-使用手動選擇ffmpeg路徑→適合小白使用
-
-
-
-\## 使用方式
-
-0\.前往`https://www.gyan.dev/ffmpeg/builds/` 下載ffmpeg
-
-1\. 執行 `oneMP3.exe`
-
-2. 選「ffmpeg.exe所在資料夾」
-
-3. 選「音檔所在資料夾」→ 選「輸出資料夾」
-
-4. 選「封面圖片（jpg/png）」→ 完成
-
-
-
-\## 授權
-
-自用可，轉載可(需附上源github網址)，商用禁止
-
+## License
+- Free for personal use  
+- Redistribution allowed (must include source GitHub link)  
+- Commercial use prohibited  
