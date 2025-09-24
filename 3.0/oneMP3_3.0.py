@@ -31,7 +31,7 @@ def ensure_ffmpeg():
     """
     1) 先從 PATH 找 ffmpeg/ffprobe
     2) 找不到就跳窗讓使用者選 ffmpeg.exe，並自動推測同資料夾的 ffprobe.exe
-    3) 設定給 pydub（最重要：一定要在任何 from_file 之前呼叫）
+    3) 設定給 pydub
     """
     ffmpeg_path = which("ffmpeg")
     ffprobe_path = which("ffprobe")
@@ -53,7 +53,7 @@ def ensure_ffmpeg():
     AudioSegment.converter = ffmpeg_path
     AudioSegment.ffprobe = ffprobe_path
 
-    # 也把 ffmpeg 的 bin 夾加進 PATH（有些環境需要）
+    # 也把 ffmpeg 的 bin 夾加進 PATH
     os.environ["PATH"] = base + os.pathsep + os.environ.get("PATH", "")
 
     print(f"[ffmpeg] 使用路徑：{ffmpeg_path}")
